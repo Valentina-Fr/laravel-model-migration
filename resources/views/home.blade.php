@@ -8,8 +8,11 @@
 </head>
 <body>
     @foreach($packages as $package)
-    <h2>{{ $package->destination }}</h2>
-    <h3>{{ $package->price }}</hs>
+    <h2>From: {{ $package->departure }}</h2>
+    <h2>To: {{ $package->destination }}</h2>
+    <h3>Price: {{ $package->price }}</hs>
+    <h3>Period: {{ $package->season }}</hs>
+    <hr>
     @endforeach
 </body>
 </html>

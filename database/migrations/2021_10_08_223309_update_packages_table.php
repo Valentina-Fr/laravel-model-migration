@@ -15,7 +15,7 @@ class UpdatePackagesTable extends Migration
     {
         Schema::table('packages', function (Blueprint $table) {
             $table->string('departure')->after('destination');
-            $table->string('season');
+            $table->string('season')->after('price');
         });
     }
 
